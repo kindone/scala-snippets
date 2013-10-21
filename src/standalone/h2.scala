@@ -6,8 +6,8 @@ import java.sql._
 object H2 extends App
 {
 	import org.h2.Driver
-	//Class.forName("org.h2.Driver")
-	val conn:Connection = DriverManager.getConnection("jdbc:h2:~/test")
+	Class.forName("org.h2.Driver")
+	val conn:Connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "")
 	conn.close();
 
 }
